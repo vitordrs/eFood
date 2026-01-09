@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import fundo from '../../assets/img/fundo.png'
+import { cores } from "../../globalStyles";
 
 export const Container = styled.header`
   background-image: url(${fundo});
@@ -14,13 +15,13 @@ export const Container = styled.header`
 `
 
 export const Logo = styled.img`
-  margin-top: 60px;
+  margin-top: 50px;
 `
 export const Title = styled.h1`
   margin-top: 100px;
-  /* margin-bottom: 40px; */
-  color: #e66767;
+  color: ${cores.vermelho};
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  background-color: transparent;
 `
