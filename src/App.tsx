@@ -1,16 +1,12 @@
-import Card from './components/Cards'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-
+import Rotas from "./routes";
+import { GlobalStyles } from "./globalStyles";
 
 function App() {
   return (
     <>
-      <Hero />
-      <Card />
-      <Footer />
+      <GlobalStyles />
+      <Rotas />
     </>
-
   )
 }
 

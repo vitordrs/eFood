@@ -10,6 +10,7 @@ import {
   CardDesc,
   Botao
 } from './styles'
+import { Link } from 'react-router-dom'
 
 import type { Restaurante } from '../../models/restaurantes'
 
@@ -39,7 +40,9 @@ const CardList = ({ restaurante }: Props) => (
 
       <CardDesc>{restaurante.desc}</CardDesc>
 
-      <Botao>Saiba mais</Botao>
+      <Link to={`/restaurante/${restaurante.id}`}>
+        <Botao>Saiba mais</Botao>
+      </Link>
     </CardContent>
   </CardItem>
 
