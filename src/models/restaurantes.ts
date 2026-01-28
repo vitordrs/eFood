@@ -2,6 +2,16 @@ import sushi from '../assets/img/sushi.png'
 import massa from '../assets/img/Macarrao.png'
 import pizza from '../assets/img/pizza.png'
 
+export type Restaurante = {
+  id: number
+  titulo: string
+  tipo: string[]
+  descricao: string
+  capa: string
+  avaliacao: number
+  cardapio: Produto[]
+}
+
 export type Produto = {
   id: number
   nome: string
@@ -9,24 +19,24 @@ export type Produto = {
   foto: string
 }
 
-export type Restaurante = {
-  id: number,
-  title: string,
-  desc: string,
-  img: string,
-  nota: number,
-  tipos: string[]
-  cardapio: Produto[]
-}
+// export type Restaurante = {
+//   id: number,
+//   titulo: string,
+//   descricao: string,
+//   img: string,
+//   nota: number,
+//   tipos: string[]
+//   cardapio: Produto[]
+// }
 
 export const restaurantes: Restaurante[] = [
   {
     id: 1,
-    title: 'Hioki Sushi',
-    desc: 'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    img: sushi,
-    nota: 4.9,
-    tipos: ['Destaque da semana', 'Japonesa'],
+    titulo: 'Hioki Sushi',
+    descricao: 'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
+    capa: sushi,
+    avaliacao: 4.9,
+    tipo: ['Destaque da semana', 'Japonesa'],
     cardapio: [
       {
         id: 1,
@@ -68,11 +78,11 @@ export const restaurantes: Restaurante[] = [
   },
   {
     id: 2,
-    title: 'La Dolce Vita Trattoria',
-    desc: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-    img: massa,
-    nota: 4.8,
-    tipos: ['Italiana'],
+    titulo: 'La Dolce Vita Trattoria',
+    descricao: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    capa: massa,
+    avaliacao: 4.8,
+    tipo: ['Italiana'],
     cardapio: [
       {
         id: 1,
@@ -114,11 +124,11 @@ export const restaurantes: Restaurante[] = [
   },
   {
     id: 3,
-    title: 'La Dolce Vita Trattoria',
-    desc: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-    img: massa,
-    nota: 4.8,
-    tipos: ['Italiana'],
+    titulo: 'La Dolce Vita Trattoria',
+    descricao: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    capa: massa,
+    avaliacao: 4.8,
+    tipo: ['Italiana'],
     cardapio: [
       {
         id: 1,
@@ -160,11 +170,11 @@ export const restaurantes: Restaurante[] = [
   },
   {
     id: 4,
-    title: 'La Dolce Vita Trattoria',
-    desc: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-    img: massa,
-    nota: 4.8,
-    tipos: ['Italiana'],
+    titulo: 'La Dolce Vita Trattoria',
+    descricao: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    capa: massa,
+    avaliacao: 4.8,
+    tipo: ['Italiana'],
     cardapio: [
       {
         id: 1,
@@ -206,11 +216,11 @@ export const restaurantes: Restaurante[] = [
   },
   {
     id: 5,
-    title: 'La Dolce Vita Trattoria',
-    desc: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-    img: massa,
-    nota: 4.8,
-    tipos: ['Italiana'],
+    titulo: 'La Dolce Vita Trattoria',
+    descricao: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    capa: massa,
+    avaliacao: 4.8,
+    tipo: ['Italiana'],
     cardapio: [
       {
         id: 1,
@@ -252,11 +262,11 @@ export const restaurantes: Restaurante[] = [
   },
   {
     id: 6,
-    title: 'La Dolce Vita Trattoria',
-    desc: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-    img: massa,
-    nota: 4.8,
-    tipos: ['Italiana'],
+    titulo: 'La Dolce Vita Trattoria',
+    descricao: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    capa: massa,
+    avaliacao: 4.8,
+    tipo: ['Italiana'],
     cardapio: [
       {
         id: 1,

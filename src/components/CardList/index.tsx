@@ -10,8 +10,8 @@ import {
   CardDesc,
   Botao
 } from './styles'
-import { Link } from 'react-router-dom'
 
+import { Link } from 'react-router-dom'
 import type { Restaurante } from '../../models/restaurantes'
 
 type Props = {
@@ -21,31 +21,31 @@ type Props = {
 const CardList = ({ restaurante }: Props) => (
   <CardItem>
     <ImgWrp>
-      <CardImg src={restaurante.img} alt={restaurante.title} />
+      <CardImg
+        src={restaurante.capa}
+        alt={restaurante.titulo}
+      />
 
       <div className="tags">
-        {restaurante.tipos.map((tipo) => (
-          <Tag key={tipo}>{tipo}</Tag>
-        ))}
+        <Tag>{restaurante.tipo}</Tag>
       </div>
     </ImgWrp>
 
     <CardContent>
       <CardHeader>
-        <CardTitle>{restaurante.title}</CardTitle>
+        <CardTitle>{restaurante.titulo}</CardTitle>
         <Rating>
-          {restaurante.nota} <span>⭐</span>
+          {restaurante.avaliacao} <span>⭐</span>
         </Rating>
       </CardHeader>
 
-      <CardDesc>{restaurante.desc}</CardDesc>
+      <CardDesc>{restaurante.descricao}</CardDesc>
 
       <Link to={`/restaurante/${restaurante.id}`}>
         <Botao>Saiba mais</Botao>
       </Link>
     </CardContent>
   </CardItem>
-
 )
 
 export default CardList

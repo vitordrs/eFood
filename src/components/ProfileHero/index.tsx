@@ -11,33 +11,38 @@ import {
 } from './styles'
 
 import logo from '../../assets/img/logo.png'
-import type { Restaurante } from '../../models/restaurantes'
+
+type Restaurante = {
+  titulo: string
+  tipo: string
+  capa: string
+}
 
 type Props = {
   restaurante: Restaurante
 }
 
 const ProfileHero = ({ restaurante }: Props) => {
-  const tipoPrincipal = restaurante.tipos.find(
-    (tipo) => tipo !== 'Destaque da semana'
-  )
-
   return (
     <Container>
       <TopHero>
         <TopContent>
           <span>Restaurantes</span>
+
           <Link to='/'>
             <Logo src={logo} alt='efood' />
           </Link>
-          <span>0 Produto(s) no carrinho </span>
+
+          <span>0 Produto(s) no carrinho</span>
         </TopContent>
       </TopHero>
 
-      <HeroPerfil style={{ backgroundImage: `url(${restaurante.img})` }}>
+      <HeroPerfil
+        style={{ backgroundImage: `url(${restaurante.capa})` }}
+      >
         <HeroContent>
-          <Tipo>{tipoPrincipal}</Tipo>
-          <Titulo>{restaurante.title}</Titulo>
+          <Tipo>{restaurante.tipo}</Tipo>
+          <Titulo>{restaurante.titulo}</Titulo>
         </HeroContent>
       </HeroPerfil>
     </Container>
