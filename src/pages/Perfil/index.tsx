@@ -6,20 +6,27 @@ import { ProductsList } from "./styles";
 import ProductCard from "../../components/ProductCards";
 import type { Produto } from "../../components/ProductCards";
 import ProductModal from "../../components/Modal";
+import { useDispatch } from "react-redux";
+import { add, open } from "../../store/reducers/cart";
+import Cart from "../../components/Cart";
 
-type Restaurante = {
+
+export type Restaurante = {
   id: number
   titulo: string
   tipo: string
   descricao: string
   capa: string
   cardapio: Produto[]
+  preco: number
 }
 
 const Perfil = () => {
   const { id } = useParams<{ id: string }>()
   const [restaurante, setRestaurante] = useState<Restaurante | null>(null)
   const [loading, setLoading] = useState(true)
+
+  const dispatch = useDispatch()
 
   const [modalAberta, setModalAberta] = useState(false)
   const [produtoSelecionado, setProdutoSelecionado] = useState<Produto | null>(null)
@@ -60,8 +67,8 @@ const Perfil = () => {
 
 
   const handleAddToCart = (produto: Produto) => {
-    console.log("Produto selecionado:", produto)
-
+    dispatch(add(produto))
+    dispatch(open())
   }
 
   if (loading) return <h1>Carregando...</h1>
@@ -88,7 +95,7 @@ const Perfil = () => {
           onAddToCart={handleAddToCart}
         />
       )}
-
+      <Cart />
       <Footer />
     </>
   )

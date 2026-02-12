@@ -11,6 +11,9 @@ import {
 } from './styles'
 
 import logo from '../../assets/img/logo.png'
+import { useDispatch, useSelector } from 'react-redux'
+import type { RootReducer } from '../../store'
+import { open } from '../../store/reducers/cart'
 
 type Restaurante = {
   titulo: string
@@ -23,6 +26,10 @@ type Props = {
 }
 
 const ProfileHero = ({ restaurante }: Props) => {
+  const { items } = useSelector((state: RootReducer) => state.cart)
+
+  const dispatch = useDispatch()
+
   return (
     <Container>
       <TopHero>
@@ -32,8 +39,9 @@ const ProfileHero = ({ restaurante }: Props) => {
           <Link to='/'>
             <Logo src={logo} alt='efood' />
           </Link>
-
-          <span>0 Produto(s) no carrinho</span>
+          <span onClick={() => dispatch(open())}>
+            {items.length} Produto(s) no carrinho
+          </span>
         </TopContent>
       </TopHero>
 
