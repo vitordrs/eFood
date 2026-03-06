@@ -104,4 +104,13 @@ export const CheckoutButton = styled.button`
   cursor: pointer;
 `
 
-
+export const EmptyCart = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: ${cores.bege};
+  font-size: 16px;
+  gap: 8px;
+  margin-top: 64px;
+`

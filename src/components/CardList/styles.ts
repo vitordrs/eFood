@@ -83,5 +83,4 @@ export const Botao = styled.button`
   padding: 8px 16px;
   font-weight: bold;
   cursor: pointer;
-
 `
