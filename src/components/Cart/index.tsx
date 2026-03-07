@@ -14,7 +14,8 @@ import {
   ProductInfo,
   ProductPrice,
   CheckoutButton,
-  EmptyCart
+  EmptyCart,
+  MobileBackButton
 } from "./styles"
 
 import lixeira from "../../assets/img/lixeira.png"
@@ -57,6 +58,9 @@ const Cart = () => {
       <Overlay onClick={closeCart} />
 
       <Sidebar>
+        <MobileBackButton onClick={closeCart}>
+          ← Voltar
+        </MobileBackButton>
 
         {step === 'cart' && (
 

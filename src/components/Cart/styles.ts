@@ -114,3 +114,18 @@ export const EmptyCart = styled.div`
   gap: 8px;
   margin-top: 64px;
 `
+
+export const MobileBackButton = styled.button`
+  display: none;
+  background: none;
+  border: none;
+  color: ${cores.bege};
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`

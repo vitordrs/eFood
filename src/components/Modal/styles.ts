@@ -78,13 +78,6 @@ export const AddCard = styled.button`
     font-weight: 700;
     padding: 8px 16px;
     cursor: pointer;
-
-    /* @media (max-width: 768px){
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    margin-top: 16px;
-  } */
 `
 
 export const CloseButton = styled.button`
