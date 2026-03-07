@@ -8,6 +8,11 @@ export const CardContainer = styled.section`
   gap: 80px;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (max-width: 768px){
+    display: block;
+    align-items: center;
+  }
 `
 
 export const CardItem = styled.div`
@@ -16,6 +21,15 @@ export const CardItem = styled.div`
   border: 1px solid ${cores.vermelho};
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1023px){
+  width: 350px;
+}
+
+  @media (max-width: 768px){
+    width: 100%;
+    margin-top: 40px;
+  }
 `
 
 export const ImgWrp = styled.div`

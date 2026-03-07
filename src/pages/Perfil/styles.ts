@@ -9,4 +9,9 @@ export const ProductsList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `

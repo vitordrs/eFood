@@ -12,6 +12,10 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 768px){
+    height: 300px;
+  }
 `
 
 export const Logo = styled.img`
@@ -24,4 +28,9 @@ export const Title = styled.h1`
   font-weight: bold;
   text-align: center;
   background-color: transparent;
+
+  @media (max-width: 768px){
+    margin-top: 20px;
+    font-size: 28px;
+  }
 `

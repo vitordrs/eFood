@@ -7,6 +7,11 @@ export const Container = styled.section`
   font-size: 18px;
   font-weight: 900;
   color: ${cores.vermelho};
+
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const TopHero = styled.div`
@@ -25,11 +30,19 @@ export const TopContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
 `
 
 export const Logo = styled.img`
   height: 40px;
   cursor: pointer;
+
+  @media (max-width: 768px){
+    margin: 16px;
+  }
 `
 
 export const HeroPerfil = styled.div`
@@ -53,6 +66,11 @@ export const HeroContent = styled.div`
   z-index: 1;
   max-width: 1024px;
   margin-left: 170px;
+
+  @media (max-width: 1023px){
+    margin-left: 0;
+    padding: 0 16px;
+  }
 `
 
 export const Tipo = styled.span`
@@ -62,6 +80,11 @@ export const Tipo = styled.span`
   color: ${cores.branca};
   margin-top: 24px;
   margin-bottom: 156px;
+
+  @media (max-width: 768px){
+    font-size: 24px;
+    margin-bottom: 120px;
+  }
 `
 
 export const Titulo = styled.h1`
