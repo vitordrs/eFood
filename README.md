@@ -23,6 +23,7 @@ O projeto consome uma API para listar restaurantes e permite realizar um fluxo c
 - Validação de formulários
 - Interface responsiva.
 Focada em proporcionar uma melhor experiência ao usuário.
+
 ---
 
 ## Tecnologias utilizadas
@@ -53,20 +54,21 @@ Focada em proporcionar uma melhor experiência ao usuário.
 ---
 
 ### Como executar o projeto
+
 - Clone o repositorio:
-  - git clone https://github.com/vitordrs/eFood.git
+    - git clone https://github.com/vitordrs/eFood.git
 - Entre na pasta do projeto:
-  - cd eFood
+    - cd eFood
 - Instale as dependências:
- - npm install
+   - npm install
 - Execute o projeto:
- - npm run dev
+   - npm run dev
 O projeto ficará disponível em:
 *http://localhost:5173*
 *(ou na porta configurada do seu ambiente)*
 ---
 
-### Estrutura do projeto
+### Estrutura do projeto:
 ```
 src
  ├─ components
@@ -105,6 +107,7 @@ Alguns dos principais desafios durante o desenvolvimento foram:
 
 ---
 ## Autor
+
 Desenvolvido por **Vitor dos Reis Soares**
 ---
 **Projeto desenvolvido para fins educacionais**
