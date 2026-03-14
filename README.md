@@ -1,12 +1,12 @@
 # E-Food
 
-Aplicação web de delivery desenvolvida para estudos de **React e arquitetura de aplicações modernas.**
+ Aplicação web de delivery desenvolvida para estudos de **React e arquitetura de aplicações modernas.**
 O projeto consome uma API para listar restaurantes e permite realizar um fluxo completo de compra, incluindo carrinho, formulário de entrega, pagamento e confirmação do pedido.
 ---
 
-## Deploy:
+## Deploy
 
-[Veja online](https://e-food-vitor.vercel.app/)
+ [Veja online](https://e-food-vitor.vercel.app/)
 ---
 
 ## Funcionalidades
@@ -37,7 +37,8 @@ Focada em proporcionar uma melhor experiência ao usuário.
 ![RestAPI](https://img.shields.io/badge/api-rest-blue?style=for-the-badge)
 ---
 ## Preview
-Interface inspirada em aplicações de delivery, com foco em experiência do usuário e organização de componentes.
+
+ Interface inspirada em aplicações de delivery, com foco em experiência do usuário e organização de componentes.
 ---
 ![interação da home](./src/assets/preview/interação-inicial.gif)
 ---
