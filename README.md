@@ -1,13 +1,16 @@
 # E-Food
+
 Aplicação web de delivery desenvolvida para estudos de **React e arquitetura de aplicações modernas.**
 O projeto consome uma API para listar restaurantes e permite realizar um fluxo completo de compra, incluindo carrinho, formulário de entrega, pagamento e confirmação do pedido.
 ---
 
 ## Deploy:
+
 [Veja online](https://e-food-vitor.vercel.app/)
 ---
 
 ## Funcionalidades
+
 - Listagem de restaurantes consumindo API
 - Página individual de cada restaurante
 - Modal com detalhes dos pratos
